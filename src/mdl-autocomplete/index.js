@@ -2,12 +2,12 @@ import {css, customElement, html, property, query, queryAll} from 'lit-element';
 import {classMap} from "lit-html/directives/class-map.js";
 import {ifDefined} from "lit-html/directives/if-defined.js";
 import {MdlComponent} from "../mdl-base";
-import {KEY_DOWN, KEY_ESCAPE, KEY_UP} from "./keycode.js";
-import {escapeRegExp} from "./util.js";
-import {MaterialRipple} from "./ripple.js";
+import {KEY_DOWN, KEY_ESCAPE, KEY_UP} from "../keycode.js";
+import {escapeRegExp} from "../util.js";
+import {MaterialRipple} from "../ripple.js";
 
 // const highlightSearch = directive((search) => (part) => { part.setValue('Hello')});
-import rippleStyle from "./ripple.scss";
+import rippleStyle from "../ripple.scss";
 
 @customElement("mdl-autocomplete")
 export class MdlAutocomplete extends MdlComponent {
